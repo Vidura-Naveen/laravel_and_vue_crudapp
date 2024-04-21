@@ -31,8 +31,9 @@ let props = defineProps({
 })
 
 const form = useForm({
-  title: props.blog.title,
-  author: props.blog.author,
-  content: props.blog.content,
+  title: props.blog ? props.blog.title : '',
+  author: props.blog ? props.blog.author : '',
+  content: props.blog ? props.blog.content : '',
 });
+
 </script>
