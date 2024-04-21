@@ -53,7 +53,7 @@ class BlogController extends Controller
     public function edit(Blog $blog)
     {
         return Inertia::render('Edit',[
-            'blogs' => $blog
+            'blog' => $blog
         ]);
     }
 

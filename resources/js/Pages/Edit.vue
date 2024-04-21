@@ -1,5 +1,5 @@
 <template>
-    <form @submit.prevent="form.put(`/blog/update/${post.id}`)">
+    <form @submit.prevent="form.put(`/blog/update/${blog.id}`)">
         <div>
             <label for="">Title</label>
             <input type="text" v-model="form.title">
@@ -27,12 +27,12 @@ import { useForm } from '@inertiajs/vue3'
 import { defineProps } from 'vue';
 
 let props = defineProps({
-    blogs: Object
+    blog: Object
 })
 
 const form = useForm({
-  title: props.blogs.title,
-  author: props.blogs.author,
-  content: props.blogs.content,
+  title: props.blog.title,
+  author: props.blog.author,
+  content: props.blog.content,
 });
 </script>

@@ -22,9 +22,9 @@ class UpdateBlogRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title'=>'required|max:200',
-            'author'=>'required|max:200',
-            'content'=>'required|max:500',
+            'title' => 'required|max:200',
+            'author' => 'required|max:200',
+            'content' => 'required|max:500',
         ];
     }
 }
