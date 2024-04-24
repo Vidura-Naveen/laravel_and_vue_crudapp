@@ -4,6 +4,7 @@
     <Link :href="`/blog/create`">Create</Link>
 </nav>
 
+
 <!-- <h1>hhh</h1> -->
     <div class="container mx-auto pt-5">
         <h1>Welcome</h1>
